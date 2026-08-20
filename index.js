@@ -137,8 +137,9 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Hosting panel is running on port ${PORT}`);
 });
+
     
